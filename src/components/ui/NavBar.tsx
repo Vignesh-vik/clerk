@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./button";
 import AccountDash from "../ui/AccountDash";
-import { SignInButton } from "@clerk/nextjs";
+import { SignInButton, UserButton } from "@clerk/nextjs";
 
 const NavBar = () => {
   const user = null;
@@ -25,8 +25,7 @@ const NavBar = () => {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   {user ? null : (
-                    <div className={ buttonVariants({ variant : 'ghost'})}>
-
+                    <div className={buttonVariants({ variant: "ghost" })}>
                       <SignInButton />
                     </div>
                   )}
@@ -38,10 +37,8 @@ const NavBar = () => {
                     ></span>
                   )}
 
-
-
                   <div className="ml-4 flow-root lg:ml-6">
-                    <AccountDash />
+                    <UserButton />
                   </div>
                 </div>
               </div>
