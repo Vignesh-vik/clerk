@@ -42,6 +42,7 @@ Running a dev server
 
 ## Features
 
+- Responsive and Scalable
 - Fast and Transparant
 - Multi-level Authentication
 - Anti Money-laundering
