@@ -11,7 +11,6 @@ import {
   import { Textarea } from "@/components/ui/textarea";
   import { Button } from "@/components/ui/button";
   import MaxWidthWrapper from "@/components/ui/MaxWidthWrapper";
-  
   export default function Component() {
     return (
       <MaxWidthWrapper className="flex items-center justify-center mt-6 mb-6">
